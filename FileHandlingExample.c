@@ -12,17 +12,17 @@ int main( )
 	
 	// Get the data to be written in file
 	char dataToBeWritten[50]
-		= "GeeksforGeeks-A Computer Science Portal for Geeks";
+		= "Here is some dummy code to write";
 
 	// Open the existing file GfgTest.c using fopen()
 	// in write mode using "w" attribute
-	filePointer = fopen("GfgTest.c", "w") ;
+	filePointer = fopen("File.c", "w") ;
 	
 	// Check if this filePointer is null
 	// which maybe if the file does not exist
 	if ( filePointer == NULL )
 	{
-		printf( "GfgTest.c file failed to open." ) ;
+		printf( "File.c file failed to open." ) ;
 	}
 	else
 	{
@@ -41,7 +41,7 @@ int main( )
 		// Closing the file using fclose()
 		fclose(filePointer) ;
 		
-		printf("Data successfully written in file GfgTest.c\n");
+		printf("Data successfully written in file File.c\n");
 		printf("The file is now closed.") ;
 	}
 	return 0;		
